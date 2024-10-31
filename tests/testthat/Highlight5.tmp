@@ -1,0 +1,5 @@
+axis132 2 4480 dsDNAphage fill_color=144,238,144,r0=0.65r,r1=0.65r+50p
+axis89 1 76312 dsDNAphage fill_color=144,238,144,r0=0.65r,r1=0.65r+50p
+axis67 1840 82203 dsDNAphage fill_color=144,238,144,r0=0.65r,r1=0.65r+50p
+axis60 1034 34194 dsDNAphage fill_color=255,255,224,r0=0.65r,r1=0.65r+50p
+axis11 3 1649 ssDNA fill_color=144,238,144,r0=0.65r,r1=0.65r+50p

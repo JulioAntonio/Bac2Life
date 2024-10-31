@@ -1,0 +1,6 @@
+seqname	trim_orf_index_start	trim_orf_index_end	trim_bp_start	trim_bp_end	trim_pr	trim_pr_max	prox_orf_index_start	prox_orf_index_end	prox_bp_start	prox_bp_end	prox_pr	prox_pr_max	partial	full_orf_index_start	full_orf_index_end	full_bp_start	full_bp_end	pr_full	arc	bac	euk	vir	mix	unaligned	hallmark_cnt	group	shape	seqname_new	final_max_score	final_max_score_group
+scaffold89.1	1	3	2	4480	0.927	0.927	1	3	2	4480	NA	NA	0	1	3	2	4480	0.927	0.0	0.0	0.0	33.3	0.0	66.7	1	dsDNAphage	linear	scaffold89.1||full	0.927	dsDNAphage
+scaffold5.1	1	96	1	76312	0.92	0.953	1	96	1	76312	NA	NA	0	1	96	1	76312	0.92	0.0	17.7	0.0	38.5	15.6	28.1	9	dsDNAphage	linear	scaffold5.1||full	0.92	dsDNAphage
+scaffold3.1	3	99	1840	82203	0.907	0.953	1	99	3	82203	NA	NA	0	1	99	3	82203	0.9	0.0	15.2	0.0	39.4	18.2	27.3	10	dsDNAphage	linear	scaffold3.1||full	0.907	dsDNAphage
+scaffold23.1	3	46	1034	34194	0.667	0.693	1	46	3	34194	NA	NA	0	1	46	3	34194	0.58	0.0	6.1	0.0	18.2	0.0	75.8	0	dsDNAphage	linear	scaffold23.1||full	0.667	dsDNAphage
+scaffold108.1	1	3	3	1649	0.987	0.987	1	3	3	1649	NA	NA	0	1	3	3	1649	0.987	0.0	0.0	0.0	66.7	0.0	33.3	0	ssDNA	linear	scaffold108.1||full	0.987	ssDNA
