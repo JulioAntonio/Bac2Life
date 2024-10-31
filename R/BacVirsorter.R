@@ -15,13 +15,12 @@
 #' @export
 #'
 #' @examples
-#' virsorter <- read_table("data/virsorter.tsv")
-#' karyotype <- read_table("data/karyotype.tsv", col_names = F)
+#' virsorter <- readr::read_table("data/virsorter.tsv")
+#' karyotype <- readr::read_table("data/karyotype.tsv", col_names = F)
 #' formatted_circos <- BacVirsorter(virsorter, karyotype)
 #' head(formatted_circos)
 #'
 BacVirsorter <- function(virsorter, karyotype) {
-  require(readr)
   require(dplyr)
   # Procesar el archivo virsorter
   virsorter <- virsorter %>%
