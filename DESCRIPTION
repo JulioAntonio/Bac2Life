@@ -1,6 +1,6 @@
 Package: Bac2Life
 Type: Package
-Title: Plotting Genomic Reprersentations for CIRCOS in StraWhat the Package Does (Title Case)
+Title: Plotting Genomic Reprersentations for CIRCOS in Strains of Bacteria
 Version: 0.1.0
 Author: Julio A. Hernandez-Gonzalez [aut, cre], Dr. Abraham Cruz [aut]
 Maintainer: Julio A. Hernandez-Gonzalez <jahernan04@gmail.com>
