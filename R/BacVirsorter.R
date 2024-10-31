@@ -9,21 +9,26 @@
 #' @param virsorter_file: The file path to the VirSorter output file containing scaffold, position and scoring information.
 #' @param karyotype_file: The file path to the karyotype file containing scaffold and chromosomal group data.
 #'
-#' @return A data.frame with scaffold information mapped to CORCOS formatting, including RGB color assigments and position data.
+#' @return A data.frame with scaffold information mapped to CIRCOS formatting, including RGB color assignments and position data.
+#'
+#' @import readr, dplyr
 #' @export
 #'
 #' @examples
-BacVirsorter <- function(virsorter_file, karyotype_file) {
+#' virsorter <- read_table("data/virsorter.tsv")
+#' karyotype <- read_table("data/karyotype.tsv", col_names = F)
+#' formatted_circos <- BacVirsorter(virsorter, karyotype)
+#' head(formatted_circos)
+#'
+BacVirsorter <- function(virsorter, karyotype) {
   require(readr)
   require(dplyr)
-
-  # Leer y procesar el archivo virsorter
-  virsorter <- read_table(virsorter_file, header = TRUE) %>%
+  # Procesar el archivo virsorter
+  virsorter <- virsorter %>%
     select(seqname, trim_bp_start, trim_bp_end, pr_full, hallmark_cnt, final_max_score_group)
   colnames(virsorter) <- c("scaffold", "start", "end", "score", "hallmark_cnt", "Phage group")
 
-  # Leer y procesar el archivo karyotype
-  karyotype <- read_table(karyotype_file, col_names = FALSE)
+  # Procesar el archivo karyotype
   colnames(karyotype) <- c("chr", "dash", "name", "scaffold", "start", "end", "chr_group")
 
   # Crear un mapeo de scaffold a su equivalente
