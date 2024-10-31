@@ -1,3 +1,18 @@
+#' VirSorter Table Preparation for CIRCOS
+#'
+#' @author Dr. Abraham Cruz, Dr. Julio A. Hernandez-Gonzalez
+#'
+#' @description
+#' The BacVirsorter function processes VirSorter and karyotype data files to create a formatted table for CIRCOS visualization.
+#'
+#'
+#' @param virsorter_file: The file path to the VirSorter output file containing scaffold, position and scoring information.
+#' @param karyotype_file: The file path to the karyotype file containing scaffold and chromosomal group data.
+#'
+#' @return A data.frame with scaffold information mapped to CORCOS formatting, including RGB color assigments and position data.
+#' @export
+#'
+#' @examples
 BacVirsorter <- function(virsorter_file, karyotype_file) {
   require(readr)
   require(dplyr)
